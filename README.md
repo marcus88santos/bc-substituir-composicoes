@@ -64,7 +64,7 @@ Coordena o fluxo principal da aplicação:
 ### Bibliotecas
 
 - `OpenPyXL`: Biblioteca para manipulação de planilhas Excel.
-- `Selenium` WebDriver**: Automação de navegação web para manipular a plataforma de orçamentos.
+- `Selenium WebDriver`: Automação de navegação web para manipular a plataforma de orçamentos.
 - `dotenv`: Gerenciamento de variáveis de ambiente.
 - `Chrome WebDriver Manager`: Gerenciamento automático do driver do Chrome para Selenium.
 
