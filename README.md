@@ -8,6 +8,8 @@ Esta aplicação automatiza a etapa de exclusão e substituição de composiçõ
 Duração de cada ciclo de formatação:<br />
 >~~cerca de 15 min~~<br />
 >**alguns segundos**
+>
+<br />
 
 ## :hammer: Funcionalidades
 
@@ -16,6 +18,7 @@ Duração de cada ciclo de formatação:<br />
 - **Substituição e Exclusão de Composições**: Alteração de composições existentes com base em um conjunto de regras definidas e exclusão de composições obsoletas.
 - **Verificação de Encargos Remanescentes**: Identificação de encargos que ainda necessitam de ajustes após a realização das alterações.
 
+<br />
 
 ## :page_facing_up: Estrutura do Código
 
@@ -53,13 +56,14 @@ Coordena o fluxo principal da aplicação:
 - Acessa e exibe a lista de composições do orçamento selecionado.
 - Aplica as mudanças e verifica encargos remanescentes.
 
+<br />
+
 ## ✔️ Técnicas e tecnologias utilizadas
 
 | [![My Skills](https://skillicons.dev/icons?i=py)]() |  
 |                          :---:                      |
 | Python                                              |  
 
-<br />
 
 ### Bibliotecas
 
@@ -68,6 +72,7 @@ Coordena o fluxo principal da aplicação:
 - `dotenv`: Gerenciamento de variáveis de ambiente.
 - `Chrome WebDriver Manager`: Gerenciamento automático do driver do Chrome para Selenium.
 
+<br />
 
 ## 🛠️ Como Usar
 
