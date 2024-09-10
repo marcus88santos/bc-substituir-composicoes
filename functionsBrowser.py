@@ -42,9 +42,9 @@ def login(browser):
     # Fazendo login
     click_on(browser, 'xpath', '//*[@id="bottom-wizard"]/button')
     # browser.get(HOME)
-    print('-> Login realizado com sucesso')
+    print('\n-> Login realizado com sucesso')
   except:
-    print('-> Usuário já está logado')
+    print('\n-> Usuário já está logado')
     return
 
 def skip_alert(browser):
@@ -77,13 +77,21 @@ def click_on(el, selector_type, selector_search):
 
 def get_encargos(browser):
   encargos = []
-  els = find_el(browser, 'CSS_SELECTOR', 'tr.success')
+  els = find_els(browser, 'CSS_SELECTOR', 'tr.success')
   for el in els:
     title = find_el(el, 'CSS_SELECTOR', 'td:nth-child(3)>a').text
     if title.lower().find('encargos') != -1:
       encargos.append({'codigo_a_substituir': find_el(el, 'CSS_SELECTOR', 'td:nth-child(1)').text,
                        'base': find_el(el, 'CSS_SELECTOR', 'td:nth-child(2)').text, 'descricao': title})
-  return encargos
+  
+  if len(encargos) > 0:
+    print('\n-> Composições restantes com o termo "encargos":\n')
+    for encargo in encargos:
+      print(encargo['codigo_a_substituir'] + ';' + encargo['base'] + ';' + encargo['descricao'])
+    print('')
+  else:
+    print('\n-> Não existem mais composições com o termo "encargos"\n')
+  return
 
 def do_changes(browser, changes):
   composicoes = find_els(browser, 'CSS_SELECTOR', 'tr.success')
