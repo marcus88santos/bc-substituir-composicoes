@@ -6,7 +6,11 @@ load_dotenv()
 import io
 
 def read_sheet(file):
-  worksheet = load_workbook(file)
+  try:
+    worksheet = load_workbook(file)
+  except:
+    print('\n-> O arquivo ' + file + ' está em uso\n')
+    exit()
   sheet = worksheet.active
   
   changes = []
