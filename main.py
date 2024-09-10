@@ -35,7 +35,7 @@ click_on(browser, 'link_text', 'Lista de Composições')
 do_changes(browser, changes)
 
 # Verifcando se ainda existem encargos
-encargos = get_encargos(browser)
-print('\n->Composições restantes com o termo "encargos":\n')
-for encargo in encargos:
-  print(encargo['codigo_a_substituir'] + ';' + encargo['base'] + ';' + encargo['descricao'])
+get_encargos(browser)
+
+# Fechando o navegador
+browser.quit()
