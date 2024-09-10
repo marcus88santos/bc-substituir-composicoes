@@ -39,3 +39,4 @@ get_encargos(browser)
 
 # Fechando o navegador
 browser.quit()
+print('-> Processo finalizado com sucesso')
