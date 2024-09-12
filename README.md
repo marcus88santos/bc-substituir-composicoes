@@ -15,8 +15,8 @@ Duração de cada ciclo de formatação:<br />
 
 - **Leitura e Processamento de Planilhas Excel**: Leitura de planilhas contendo dados de composições a serem alteradas ou removidas.
 - **Automação de Navegação Web**: Acesso automatizado à plataforma de orçamentos via Selenium WebDriver.
-- **Substituição e Exclusão de Composições**: Alteração de composições existentes com base em um conjunto de regras definidas e exclusão de composições obsoletas.
-- **Verificação de Encargos Remanescentes**: Identificação de encargos que ainda necessitam de ajustes após a realização das alterações.
+- **Substituição e Exclusão de Composições**: Alteração de composições existentes com base em um conjunto de regras definidas e exclusão de composições.
+- **Verificação de Encargos Remanescentes**: Identificação de composições que ainda necessitam de ajustes após a realização das alterações.
 
 <br />
 

@@ -1,5 +1,5 @@
 from functions import get_changes, get_orcamento
-from functionsBrowser import login, open_browser, navegate_to, write_on, click_on, get_encargos, do_changes
+from functionsBrowser import find_el, find_els, login, open_browser, navegate_to, write_on, click_on, get_encargos, do_changes
 import os
 from dotenv import load_dotenv
 load_dotenv()
@@ -26,10 +26,12 @@ orcamento = get_orcamento(FOLDER, TITLE_ORCAMENTO)
 
 write_on(browser, 'id', 'filtro_descricao', orcamento)
 click_on(browser, 'link_text', orcamento)
+print('-> Url acessada: ' + browser.current_url) 
 
 # Acessando composições
 click_on(browser, 'link_text', 'Exibir')
 click_on(browser, 'link_text', 'Lista de Composições')
+print('-> Url acessada: ' + browser.current_url) 
 
 # Substituindo composições
 do_changes(browser, changes)

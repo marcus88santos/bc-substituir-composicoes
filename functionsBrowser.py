@@ -24,6 +24,7 @@ def open_browser():
   options.add_experimental_option("detach", True)
   options.add_argument('--enable-notifications')
   options.add_argument("start-maximized")
+  options.add_argument("--headless=new")
   options.add_experimental_option(
     "prefs", {"profile.default_content_setting_values.notifications": 1}
 )
@@ -60,6 +61,7 @@ def navegate_to(url, browser):
   # skip_alert(browser)
   browser.get(url)
   # skip_alert(browser)
+  print('-> Url acessada: ' + browser.current_url) 
 
 def write_on(el, selector_type, selector_search, text):
   try:
